@@ -2,33 +2,98 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Website - Home</title>
+    <title>John Lydrick Remitar | Portfolio</title>
+    <!-- Elegant Font Pairing -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-    <h1>My Website</h1>
+    <h1>Welcome To My Portfolio</h1>
     <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-    <nav id="navMenu">
+
+    <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="services.html">Services</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 </header>
 
-<section>
-    <h2>Welcome to Our Website</h2>
-    <p>This is the Home page.</p>
-    <button onclick="showMessage()">Click Me</button>
+<!-- HOME -->
+<section id="home">
+<img src="johnlyd.jpg" alt="John Lydrick Remitar" class="profile-pic">
+
+<h2>Hi I'm JOHN LYDRICK REMITAR</h2>
+    <p>BSIT student and aspiring Web Developer focused on building modern, functional, and user-friendly web applications.</p>
+    <button onclick="showMessage()">Hire Me</button>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2>About Me</h2>
+    <p>I am a Bachelor of Science in Information Technology (BSIT) student with a strong interest in web development and modern application design.</p>
+    <p>I focus on building user-friendly, accessible, and performant web applications. I enjoy learning modern front-end frameworks, backend APIs, and deployment strategies.</p>
+
+    <div class="info-cards">
+        <div class="card">
+            <h3>💻 Skills</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Next.js</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>🎯 Interests</h3>
+            <ul>
+                <li>UI/UX Design</li>
+                <li>API Design</li>
+                <li>DevOps</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+    <h2>Services</h2>
+    <ul>
+        <li><strong>Web Design</strong> – Modern and user-friendly designs.</li>
+        <li><strong>Web Development</strong> – Responsive and functional websites.</li>
+        <li><strong>SEO Optimization</strong> – Better visibility on search engines.</li>
+    </ul>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2>Contact Me</h2>
+    <ul>
+        <li>Email: <a href="mailto:johnlydrick@gmail.com">johnlydrick@gmail.com</a></li>
+        <li>Phone: 0945455155</li>
+        <li>Location: Butuan City</li>
+    </ul>
 </section>
 
 <footer>
-    <p>© 2026 My Website</p>
+    <p>© 2026 John Lydrick Remitar</p>
 </footer>
 
-<script src="script.js"></script>
+<script>
+function showMessage() {
+    alert("Welcome to my website!");
+}
+
+function toggleMenu() {
+    const nav = document.querySelector("nav ul");
+    nav.classList.toggle("show");
+}
+</script>
+
 </body>
 </html>

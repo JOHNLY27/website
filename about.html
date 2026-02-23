@@ -2,30 +2,110 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Website - About</title>
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-    <h1>My Website</h1>
+    <h1>Welcome To My Portfolio</h1>
     <button class="menu-toggle" onclick="toggleMenu()">☰</button>
     <nav id="navMenu">
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="services.html">Services</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 </header>
 
-<section>
-    <h2>About Us</h2>
-    <p>We are a company that provides awesome services.</p>
+<!-- HOME -->
+<section id="home">
+    <h2>Hi I'm JOHN LYDRICK REMITAR</h2>
+    <p>
+        BSIT student and aspiring Web Developer focused on building modern,
+        functional, and user-friendly web applications.
+    </p>
+    <button onclick="showMessage()">Click Me</button>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        I am a Bachelor of Science in Information Technology (BSIT) student with a strong interest in web development and modern application design. 
+        I build responsive, user-friendly web applications that prioritize performance, accessibility, and modern design.
+    </p>
+    
+    <p>
+        I enjoy turning complex problems into simple, elegant solutions using the latest web technologies. My philosophy is to write clean, maintainable code and create applications that are both functional and delightful to use.
+    </p>
+    
+    <p>
+        I have worked on projects including personal portfolios, REST APIs, and interactive web applications. I continuously learn new technologies and frameworks to stay up-to-date with industry trends. When I’m not coding, I explore UI/UX trends, contribute to open-source projects, and experiment with side projects.
+    </p>
+
+    <!-- Skills, Interests, Services in Cards -->
+    <div class="info-cards">
+
+        <!-- Skills Card -->
+        <div class="card">
+            <h3>💻 Skills</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Next.js</li>
+            </ul>
+        </div>
+
+        <!-- Interests Card -->
+        <div class="card">
+            <h3>🎯 Interests</h3>
+            <ul>
+                <li>UI/UX Design</li>
+                <li>API Design</li>
+                <li>DevOps</li>
+            </ul>
+        </div>
+
+        <!-- Services Card -->
+        <div class="card">
+            <h3>🛠 Services</h3>
+            <ul>
+                <li>Web Design</li>
+                <li>Web Development</li>
+                <li>SEO Optimization</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+    <h2>Services</h2>
+    <ul>
+        <li><strong>Web Design</strong> – Creating modern and user-friendly designs.</li>
+        <li><strong>Web Development</strong> – Building responsive and functional websites.</li>
+        <li><strong>SEO Optimization</strong> – Improving website visibility in search engines.</li>
+    </ul>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2>Contact Me</h2>
+    <ul>
+        <li>Email: johnlyd@gmail.com</li>
+        <li>Phone: 0945455155</li>
+        <li>Location: Butuan City</li>
+    </ul>
 </section>
 
 <footer>
-    <p>© 2026 My Website</p>
+    <p>© 2026 John Lydrick Remitar</p>
 </footer>
 
 <script src="script.js"></script>
